@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/mystyle.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css.font-awesome.min.css" integrity="sha384-wvFXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorogin="anonymous">
+        
+        <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TMVPMX9');</script>
+<!-- End Google Tag Manager -->
+        
+    <title>Accordion test</title>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready( function() {
+                
+                // initialize accordion
+                $('#Accordion ul').each( function () {
+                    var currentURI = window.location.href;
+                    var links = $('a', this);
+                    var collapse = true;
+                    for (var i = 0; i <links.size(); i++ {
+                         var elem = links.eq(i);
+                         var href = elem.attr('href');
+                         var hrefLength = href.length;
+                         var compareTo = currentURI.substr(-1*hrefLength);
+                    
+                         if (href == compareTo) {
+                             collapse = false;
+                             break;
+                         }
+                    };
+                    if (collapse) {
+                        $(this).hide();
+                    }
+                });
+            
+                $("Accordion").delegate('span', 'click', function() {
+                    var ul = $(this).next('ul');
+                    if (ul.is('visible')) {
+                        ul.slideUp(500);
+                    } else {
+                        $('#Accordion ul').not(ul).slideUp(500);
+                        ul.slideDown(500);
+                    } 
+                });
+            });
+        </script>
+    </head>
+    
+    <body>
+        <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TMVPMX9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+        
+        
+         <div class="jumbotron text-left" style="margin-bottom: 0 bg-#287B33" height="10%">
+            <h1>Seedling Theather Company</h1>
+            <p>Where Young Performers Are Grown</p>
+            
+             <!--Utility Navigation-->
+            
+            <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-light float-right scrolling-navbar">
+            <ul class="navbar-nav-ml-auto">
+                <li class="nav-item">
+                    <a href="#" class="nav-link waves-effect">Shop</a>
+                </li>
+                <li class="nav-item pl-2 md-2-md-0">
+                    <button><a href="#" class="btn btn-outline-info btn-md btn-rounded btn-navbar waves-effect waves-light" data-toggle="modal" data-target="#modalRegistrationForm">Sign Up</a></button>
+                </li>
+                
+            </ul>
+        </nav>
+            
+        </div>    
+            
+    </div>
+        
+        
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <a class="navbar-brand" href="index.html"><!--Sedling Theater Company--></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+        <div class="collapse navbar-collapse" id="colapsiblenavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="classes.html">Classes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="calendar.html">Calnedar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="store.html">Store</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Reviews</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">More</a>
+                </li>
+            </ul>
+        </div>
+        </nav>
+        
+        <!--Utility Navigation-->
+        
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-light fixed-top scrolling-navbar">
+            <ul class="navbar-nav-ml-auto">
+                <li class="nav-item">
+                    <a href="#" class="nav-link waves-effect">Shop</a>
+                </li>
+                <li class="nav-item pl-2 md-2-md-0">
+                    <button><a href="#" class="btn btn-outline-info btn-md btn-rounded btn-navbar waves-effect waves-light" data-toggle="modal" data-target="#modalRegistrationForm">Sign Up</a></button>
+                </li> 
+            </ul>
+        </nav>  
+    </div>
+        
+        <div class="container py-5">
+            
+        <!-- Outline of Seedling Calendar-->
+            <header class="text-center text-grey md-5">
+                <h3><b>Welcome to our calendar page. Please take a look at our upcoming shows and register your kids now. Our show dates are filling up quickliy!</b></h3>
+            </header>
+            
+            
+        <!-- Calendar-->
+            <div class="calendar shadow bg-white p-5">
+                <div class="d-flex align-items-center"><i class="fa fa-calendar fa-3x mr-3"></i>
+                    <div class="dropdown"><h1 class="month font-weight-bold mb-0 text-uppercase"><span>July 2020 button</span></h1><div class="dropdown-content">January <br> Febuary <br> March <br> April <br> May <br> June <br> July <br> August <br> September <br> October <br> November <br> December <br></div></div>
+                </div>  
+            </div>
+            
+            
+            <!--initialize accordion-->
+            <ul id="Accordion" class="accordion">
+                <li>
+                    <span><div class="link"><i class="fa fa-bullhorn"></i>Seedling Theater<i class="fa fa-chevron-down"></i></div></span>
+                    <ul class="submenu">
+                        <li><a href="#">Frozen Cast</a></li>
+                        <li><a href="#">Classes</a></li>
+                        <li><a href="#">Resources</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <span><div class="link"><i class="fa fa-asterisk"></i>Seedling Theater<i class="fa fa-chevron-down"></i></div></span>
+                    <ul class="submenu">
+                        <li><a href="#">Musical</a></li>
+                        <li><a href="#">Theater</a></li>
+                        <li><a href="#">Sprouts</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <span><div class="link"><i class="fa fa-bars"></i>Seedling Theater<i class="fa fa-chevron-down"></i></div></span>
+                    <ul class="submenu">
+                        <li><a href="#">Design</a></li> 
+                    </ul>
+                </li>
+                
+                <li>
+                <span>INFO</span>
+                    <ul>
+                        <li><a href="#">Dance I</a></li>
+                        <li><a href="#">Dance I</a></li>
+                    </ul>
+                </li>
+                
+            </ul>
+            
+            
+            
+            <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span class="text">FILTERS</span>
+                    </button>
+                </div>
+                
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#"><span class="text-white" target="_blank">Instructors</span></a></li>
+                    <li class="active"><a href="#">Frozen Cast <span class="sr-only">(current)</span></a></li>    
+                    </ul>
+                    <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Classes <span class="caret"></span></a>
+                    <ul>
+                        <li><a href="#">Musical</a></li>
+                        <li><a href="#">design</a></li>
+                        <li><a href="#">Acting</a></li>
+                        <li><a href="#" target="_blank">Sprouts</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Dance I</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Dance II</a></li>
+                    </ul>    
+                    </li>
+                    <li><a href="#">Resources</a></li>
+                </div>
+                
+                
+            </div>
+            </nav>
+            
+            
+            
+        </div>
+        
+        
+        <div class="text-center">
+            <button class="btn1 btn-default btn-circle btn-lg">Acting<i class="glyphicon glyphicon-plus" aria-hidden="true"></i></button>
+            <button class="btn1 btn-default btn-circle btn-lg">Sprouts<i class="glyphicon glyphicon-music" aria-hidden="true"></i></button>
+            <button class="btn1 btn-default btn-circle btn-lg">Musical<i class="glyphicon glyphicon-chevron-up" aria-hidden="true"></i></button>
+            <button class="btn1 btn-default btn-circle btn-lg">Design<i class="glyphicon glyphicon-chevron-down" aria-hidden="true"></i></button>
+            <button class="btn1 btn-default btn-circle btn-lg">Dance<i class="glyphicon glyphicon-volume-off" aria-hidden="true"></i></button>
+        </div>
+       
+       
+        
+        
+        <div class="col-sm-12">
+            <div class="footer fixed bottom">
+                <h3>Copyright. Seedling Theater Company 2020</h3>
+            </div>
+        </div>
+    
+    </body>
+    
+    
+    
+</html>
